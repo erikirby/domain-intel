@@ -1,0 +1,17 @@
+# MCPize manifest - https://mcpize.com
+version: 1
+name: domain-intel
+description: >-
+  Website intelligence for AI agents. Given any URL, returns tech stack (CMS, frameworks, analytics, CDN),
+  hosting provider, security posture (HSTS, CSP, SSL), email security config (SPF, DKIM, DMARC),
+  SEO metadata, social media profiles, and DNS records. Uses only standard HTTP/DNS/WHOIS protocols — no scraping.
+runtime: typescript
+entry: dist/index.js
+build:
+  install: npm install
+  command: npm run build
+startCommand:
+  type: stdio
+  command: node
+  args:
+    - dist/index.js

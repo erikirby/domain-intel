@@ -1,0 +1,20 @@
+{
+  "name": "domain-intel",
+  "version": "1.0.0",
+  "description": "Website intelligence for AI agents. Given any URL, returns tech stack, hosting provider, security posture, email config, SEO metadata, and DNS records. No scraping — uses standard HTTP/DNS/WHOIS protocols only.",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "whois": "^2.16.1",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.19.19",
+    "typescript": "^5.9.3"
+  }
+}
